@@ -1,0 +1,24 @@
+module.exports = {
+  PORT: process.env.PORT || 3000,
+
+  GRAPH_API_VERSION: process.env.GRAPH_API_VERSION || "v23.0",
+  META_VERIFY_TOKEN: process.env.META_VERIFY_TOKEN,
+
+  FACEBOOK_PAGE_ACCESS_TOKEN: process.env.FACEBOOK_PAGE_ACCESS_TOKEN,
+
+  WHATSAPP_ACCESS_TOKEN: process.env.WHATSAPP_ACCESS_TOKEN,
+  WHATSAPP_PHONE_NUMBER_ID: process.env.WHATSAPP_PHONE_NUMBER_ID,
+
+  OPENAI_API_KEY: process.env.OPENAI_API_KEY,
+  OPENAI_MODEL: process.env.OPENAI_MODEL || "gpt-4.1-mini",
+
+  GOOGLE_SERVICE_ACCOUNT_EMAIL: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
+  GOOGLE_PRIVATE_KEY: process.env.GOOGLE_PRIVATE_KEY,
+  GOOGLE_SHEET_ID: process.env.GOOGLE_SHEET_ID,
+  GOOGLE_SHEET_NAME: process.env.GOOGLE_SHEET_NAME || "User Info",
+
+  GOOGLE_FORM_LINK:
+    process.env.GOOGLE_FORM_LINK || "https://forms.gle/replace-with-your-form-link",
+
+  SESSION_IDLE_FLUSH_MS: Number(process.env.SESSION_IDLE_FLUSH_MS || 300000),
+};
